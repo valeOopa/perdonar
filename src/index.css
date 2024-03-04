@@ -11,7 +11,7 @@
 #app{
   position: relative;
   min-height: 100vh;
-  background-image:  url('./public/gifs/dog.gif');
+  background-image:  url('https://media.tenor.com/JEJMA1lDdgMAAAAM/%D0%BC%D0%B5%D0%BC%D1%8B.gif');
   background-repeat: no-repeat;
   background-size: 100vh;
   background-position: center;
