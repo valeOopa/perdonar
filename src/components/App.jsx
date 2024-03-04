@@ -10,7 +10,7 @@ function App() {
   
   return (
     <>
-    {yes ? <div id="app" style={{backgroundImage: 'url("./public/gifs/happy-cat.gif")'}}>
+    {yes ? <div id="app" style={{backgroundImage: 'url("https://media.tenor.com/ger0WV_a2WMAAAAj/happy-cat.gif")'}}>
       {!yes?<Sorry setYes={setYes} />:<Happy />}
     </div>: <div id="app">
       {!yes?<Sorry setYes={setYes} />:<Happy />}
