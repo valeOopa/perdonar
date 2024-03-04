@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kani", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#app{
+  position: relative;
+  min-height: 100vh;
+  background-image:  url('./public/gifs/dog.gif');
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-position: center;
+  background-color: #030303;
+}
+#app__article{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  background: #000b;
+  width: 100vw;
+  height: 100vh;
+}
+
+#article__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  font-size: 4em;
+  color: #FFF;
+}
+
+#article__buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons__button{
+  color: #FFF;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  height: 2em;
+  width: 6em;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#buttons__button-yes{
+  background: #090;
+  cursor: pointer;
+  
+  box-shadow: #090 0 0 10px;
+  transition: box-shadow .3s;
+  -webkit-transition: box-shadow .3s;
+  -moz-transition: box-shadow .3s;
+  -ms-transition: box-shadow .3s;
+  -o-transition: box-shadow .3s;
+}
+.margin{
+  margin-right: 3em;
+}
+.noMargin{
+  margin-right: 0;
+}
+#buttons__button-yes:hover{
+  box-shadow: #090 0 0 20px;
+}
+
+#buttons__button-no{
+  position: relative;
+  background: #900;
+  box-shadow: #900 0 0 10px;
+}
+@media screen AND (max-width: 700px) {
+  #app{
+    background-size: 90vw;
+  }
+}
+
+@media screen AND (max-width: 605px) {
+  #article__title{
+    font-size: 2.5em;
+  }
+}
+@media screen AND (max-width: 400px) {
+  #article__title{
+    height: 70vh;
+  }
+  #article__buttons-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen AND (max-width: 380px) {
+  #article__title{
+    font-size: 2em;
+  }
+}
+
+@media screen AND (max-width: 320px) {
+  #article__title{
+    font-size: 1.5em;
+  }
+}
